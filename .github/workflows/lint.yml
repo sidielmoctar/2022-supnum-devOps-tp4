@@ -1,30 +1,25 @@
-name: Lint # name of the action (displayed in the github interface)
-
-on: # event list
-pull_request: # on a pull request to each of these branches
+---
+name: Lint
+on: null
+pull_request: null
 branches:
   - development
   - staging
   - production
-
-env: # environment variables (available in any part of the action)
+env:
   NODE_VERSION: 16
-
-jobs: # list of things to do
+jobs:
   linting:
-    name: Linting # job name (unique id)
-    runs-on: ubuntu-latest # on which machine to run
-    steps: # list of steps
+    name: Linting
+    runs-on: ubuntu-latest
+    steps:
       - name: Install NodeJS
         uses: actions/setup-node@v2
         with:
           node-version: ${{ env.NODE_VERSION }}
-
       - name: Code Checkout
         uses: actions/checkout@v2
-
       - name: Install Dependencies
         run: npm ci
-
       - name: Code Linting
         run: npm run lint
