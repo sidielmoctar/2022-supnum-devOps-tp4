@@ -1,0 +1,16 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint:js": "eslint src/**/*.js",
+    "lint": "npm run lint:js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "8.29.0"
+  }
+}
