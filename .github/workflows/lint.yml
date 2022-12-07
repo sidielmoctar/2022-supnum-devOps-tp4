@@ -1,8 +1,7 @@
 name: Lint
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+    types: [closed]
 env:
   NODE_VERSION: 16
 jobs:
