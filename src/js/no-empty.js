@@ -23,11 +23,11 @@ function doSomething() {
     console.log("doSomething === ");
 }
 
-if (foo) {
+if (true) {
     // empty
 }
 
-while (foo) {
+while (false) {
     /* empty */
 }
 
