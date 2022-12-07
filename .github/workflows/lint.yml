@@ -1,5 +1,8 @@
 name: Lint
-on: push
+on: # event list
+pull_request: # on a pull request to each of these branches
+branches:
+  - main
 env:
   NODE_VERSION: 16
 jobs:
