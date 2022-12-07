@@ -19,15 +19,18 @@ try {
 
 //correct
 
+const bool1 = true;
+const bool2 = false;
+
 function doSomething() {
     console.log("doSomething === ");
 }
 
-if (true) {
+if (bool1) {
     // empty
 }
 
-while (false) {
+while (bool2) {
     /* empty */
 }
 
