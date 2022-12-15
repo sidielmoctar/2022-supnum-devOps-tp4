@@ -1,2 +1,2 @@
 const i = 1;
-console.log("Test");
+console.log("Test", i);
